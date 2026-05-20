@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+
+  # ── Backend Service ────────────────────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: rgrid-backend
+    environment:
+      PORT: 5000
+      ADMIN_USERNAME: admin
+      ADMIN_PASSWORD: admin123
+      JWT_SECRET: rgrid_super_secret_jwt_key_2024
+      JWT_EXPIRES_IN: 8h
+      FRONTEND_URL: http://localhost
+    ports:
+      - "5000:5000"
+    networks:
+      - rgrid-network
+    restart: unless-stopped
+
+  # ── Frontend Service ───────────────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: rgrid-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - rgrid-network
+    restart: unless-stopped
+
+# ── Shared Network ─────────────────────────────────────────────────────────
+networks:
+  rgrid-network:
+    driver: bridge

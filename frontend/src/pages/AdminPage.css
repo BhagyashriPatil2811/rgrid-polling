@@ -1,0 +1,123 @@
+/* Admin Page Styles */
+.admin-page {
+  padding: 40px 0;
+  min-height: calc(100vh - 60px);
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.admin-header h1 {
+  font-size: 28px;
+  color: #1a1a2e;
+}
+
+.live-badge {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+.live-badge.live {
+  background-color: #ffe0e0;
+  color: #e94560;
+}
+
+.live-badge.offline {
+  background-color: #eee;
+  color: #999;
+}
+
+/* Total Votes Card */
+.total-votes-card {
+  background: linear-gradient(135deg, #1a1a2e, #e94560);
+  color: white;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(233, 69, 96, 0.3);
+}
+
+.total-label {
+  font-size: 16px;
+  opacity: 0.85;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.total-count {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* Nominee Stats */
+.nominee-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.nominee-stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.nominee-stat-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nominee-symbol {
+  font-size: 32px;
+}
+
+.nominee-stat-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.nominee-stat-party {
+  font-size: 13px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.nominee-stat-right {
+  text-align: right;
+}
+
+.nominee-vote-count {
+  font-size: 28px;
+  font-weight: 800;
+  color: #e94560;
+}
+
+.nominee-percentage {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Chart */
+.chart-container {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}

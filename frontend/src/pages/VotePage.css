@@ -1,0 +1,68 @@
+/* Vote Page Styles */
+.vote-page {
+  padding: 40px 0;
+  min-height: calc(100vh - 60px);
+}
+
+.vote-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.vote-header h1 {
+  font-size: 32px;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.vote-header p {
+  font-size: 15px;
+  color: #888;
+}
+
+.nominees-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.vote-success-banner {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+  border-radius: 10px;
+  padding: 14px 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 24px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vote-error-banner {
+  background-color: #fff0f3;
+  color: #e94560;
+  border: 1px solid #f5c2cb;
+  border-radius: 10px;
+  padding: 14px 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 24px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-status {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: #888;
+}
+
+.page-status.error {
+  color: #e94560;
+}
